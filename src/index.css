@@ -1,25 +1,28 @@
+html {
+  width: 1080px;
+}
+
 div.menuBar {
   position: absolute;
-  width: 100%;
+  width: 1700px;
   height: 109px;
   left: 0px;
   top: 0px;
   background: #fffdfd;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   align-content: left;
-  margin-bottom: 10PX;
+  margin-bottom: 10px;
 }
 
 div.menuBar img {
   margin-top: 30px;
-  margin-left: 80px;
+  margin-left: 120px;
 }
 
 div.menuBar ul {
   list-style: none;
   margin-left: 20px;
   padding: 10;
-  
 }
 
 div.menuBar ul li a {
@@ -28,10 +31,10 @@ div.menuBar ul li a {
   padding: 0px 10px;
   position: relative;
 
-  left: 70%;
+  left: 1200px;
   bottom: 50px;
   text-decoration: none;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   color: black;
   font-size: 18px;
@@ -41,13 +44,13 @@ div.menuBar ul li a {
 
 div.content {
   background-color: white;
-  width: 100%;
+  width: 1700px;
   left: 0px;
   top: 120px;
   position: absolute;
   height: 100%;
-  background: url(../assets/forma1.svg) no-repeat -90px 70px ,
-    url(../assets/forma2.svg) no-repeat 110% 0% , fixed;
+  background: url(../assets/forma1.svg) no-repeat -90px 70px,
+    url(../assets/forma2.svg) no-repeat 110% 0%, fixed;
   background-size: 450px;
   background-attachment: scroll;
 }
@@ -82,7 +85,7 @@ div.content button {
   top: 360px;
 
   background: rgba(252, 166, 15, 0.83);
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   font-family: Nunito;
   font-style: normal;
@@ -93,15 +96,13 @@ div.content button {
   color: #ffffff;
 }
 
-
-div.content ul{
+div.content ul {
   list-style: none;
   margin-left: 10px;
   padding: 10;
-
 }
 
-div.content li{
+div.content li {
   float: left;
   display: inline;
   padding: 0px 10px;
@@ -118,28 +119,156 @@ div.content li{
   font-size: 18px;
 }
 
-div.content span{
+div.content span {
   position: absolute;
   left: 700px;
   top: 530px;
   font-family: Nunito;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 33px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
 
-color: #000000;
-
+  color: #000000;
 }
 
-.scroll{
+.scroll {
   position: absolute;
   left: 750px;
   top: 470px;
   font-family: Nunito;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 33px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
 
+@media only screen and (max-device-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media only screen and (max-device-width: 720px) {
+  html {
+    font-size: 50.5%;
+    width: 20%;
+    height: 0%;
+  }
+  
+
+  div.menuBar {
+    width: 100%;
+    
+    left: 0px;
+    
+  }
+  div.menuBar img {
+    position: absolute;
+        top: 5%;
+        left: 17%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+  }
+  
+  div.menuBar ul li a{
+    position: relative;
+    padding: 0px 10px;
+    display:inline;
+    top: 55px;
+    bottom: 30px;
+    left: 10px;
+    right: auto;
+    margin-left: auto;
+  
+  }
+
+  div.content {
+    background-color: white;
+    width: 100%;
+    left: 0px;
+    top: 120px;
+    position: absolute;
+    height: 750px;
+    background: url(../assets/forma1.svg) no-repeat -215px 30px,
+      url(../assets/forma2.svg) no-repeat 190px 370px;
+    background-size: 400px;
+  }
+
+  div.content p {
+    position: absolute;
+    width: 255px;
+    height: 10px;
+    
+    top: 130px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    
+   
+  }
+
+  div.content button {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 50%;
+     
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    top: 360px;
+    font-size: 17px;
+    line-height: 40px;
+  }
+
+  .copo {
+    display: none;
+  }
+
+  div.content ul {
+    position:absolute;
+    list-style: none;
+    margin-left: 10px;
+    padding: 10;
+    top: 105%;
+    left: 50%;
+     
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  div.content li {
+   
+    display: inline;
+    padding: 0px 10px;
+    position: relative;
+  
+    left: 0%;
+    top: 50%;
+    margin-right: 0%;
+    transform: translate(-50%, -50%);
+    bottom: 50px;
+    text-decoration: none;
+    font-family: nunito;
+    font-family: Nunito;
+    font-style: normal;
+    color: black;
+    font-size: 18px;
+  }
+  
+  div.content span{
+    display: none;
+  }
+  .scroll {
+    display: none;
+  }
 }
